@@ -1,4 +1,4 @@
-import { SearchBar } from './Searchbar';
+import { SearchBar } from './SearchBar';
 import './App.css';
 import { useState } from 'react';
 import axios from 'axios';
@@ -7,7 +7,7 @@ import { WeatherCard } from './WeatherCard';
 function App() {
   const api = '696598990b200ad5a517e1fdc980112f';
 
-  const [city, setCity] = useState('Cherrapunji');
+  const [city, setCity] = useState('');
   const [Data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
